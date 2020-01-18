@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="105dp"
+            android:layout_height="135dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/colorAccent"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3dp"
+            android:layout_toEndOf="@id/photo"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@id/photo">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="2dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/tv_tanggal_rilis"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:padding="2dp"
+                android:text="@string/release_date"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/photo"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/photo">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/icon"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_rate_review" />
+
+                <TextView
+                    android:id="@+id/tv_rate"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="13dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

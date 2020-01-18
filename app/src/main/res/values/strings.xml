@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MILO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_tvshow">TV Show</string>
+    <string name="image_view">Image</string>
+    <string name="release_date">Release_Date</string>
+    <string name="icon">star_icon</string>
+    <string name="title">Title</string>
+    <string name="detail_synopsis">Detail_Synopsis</string>
+    <string name="change_language_settings">Change Language Setting</string>
+    <string name="rating">Rating</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
